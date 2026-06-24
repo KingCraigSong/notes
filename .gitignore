@@ -2,11 +2,7 @@
 node_modules/
 
 # Build output
-public/
 dist/
-
-# Quartz
-.quartz/
 
 # Environment
 .env

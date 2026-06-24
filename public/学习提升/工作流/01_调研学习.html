@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>01_调研学习</title><meta charset="utf-8"/><link rel="preload" href="../../index-6a0b757c.css" as="style"/><link rel="preload" href="../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF Pro Display:wght@400;700&amp;family=SF Pro Text:ital,wght@0,400;0,600;1,400;1,600&amp;family=Fira Code:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="莫坊开源笔记"/><meta property="og:title" content="01_调研学习"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="01_调研学习"/><meta name="twitter:description" content="基于 Flowable 打造你们自己的工作流平台，是一条“站在巨人肩膀上”的渐进式路线。下面我把整个过程拆成 5 个阶段，每个阶段给出目标、关键技术点、可直接落地的步骤与工具，以及容易踩的坑。你可以按这个路线边调研、边打样、边上线，适合 1~3 人小团队起步，也适合后续横向扩展成专职中台。 阶段 1 技术预研（1 周） 目标：验证 Flowable 能不能跑通你们最复杂的 1~2 条业务线，并输出《技术可行性报告》。 跑通最小闭环 a."/><meta property="og:description" content="基于 Flowable 打造你们自己的工作流平台，是一条“站在巨人肩膀上”的渐进式路线。下面我把整个过程拆成 5 个阶段，每个阶段给出目标、关键技术点、可直接落地的步骤与工具，以及容易踩的坑。你可以按这个路线边调研、边打样、边上线，适合 1~3 人小团队起步，也适合后续横向扩展成专职中台。 阶段 1 技术预研（1 周） 目标：验证 Flowable 能不能跑通你们最复杂的 1~2 条业务线，并输出《技术可行性报告》。 跑通最小闭环 a."/><meta property="og:image:alt" content="基于 Flowable 打造你们自己的工作流平台，是一条“站在巨人肩膀上”的渐进式路线。下面我把整个过程拆成 5 个阶段，每个阶段给出目标、关键技术点、可直接落地的步骤与工具，以及容易踩的坑。你可以按这个路线边调研、边打样、边上线，适合 1~3 人小团队起步，也适合后续横向扩展成专职中台。 阶段 1 技术预研（1 周） 目标：验证 Flowable 能不能跑通你们最复杂的 1~2 条业务线，并输出《技术可行性报告》。 跑通最小闭环 a."/><meta property="og:image" content="https://localhost/static/og-image.png"/><meta property="og:image:url" content="https://localhost/static/og-image.png"/><meta name="twitter:image" content="https://localhost/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="localhost"/><meta property="og:url" content="https://localhost/学习提升/工作流/01_调研学习"/><meta property="twitter:url" content="https://localhost/学习提升/工作流/01_调研学习"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="基于 Flowable 打造你们自己的工作流平台，是一条“站在巨人肩膀上”的渐进式路线。下面我把整个过程拆成 5 个阶段，每个阶段给出目标、关键技术点、可直接落地的步骤与工具，以及容易踩的坑。你可以按这个路线边调研、边打样、边上线，适合 1~3 人小团队起步，也适合后续横向扩展成专职中台。 阶段 1 技术预研（1 周） 目标：验证 Flowable 能不能跑通你们最复杂的 1~2 条业务线，并输出《技术可行性报告》。 跑通最小闭环 a."/><meta name="generator" content="Quartz"/><link href="../../index-6a0b757c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7f220492.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-caf7c009.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="学习提升/工作流/01_调研学习" data-basepath><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">莫坊开源笔记</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="搜索" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索内容..." placeholder="搜索内容..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="暗色模式"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="阅读模式"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-3" aria-label="探索"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-3" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../学习提升/">学习提升</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../学习提升/工作流/">工作流</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>01_调研学习</a></div></nav><h1 class="article-title">01_调研学习</h1><p show-comma="true" class="content-meta"><time datetime="2025-09-05T03:15:33.661Z">2025年9月05日</time><span>9分钟阅读</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><p>基于 Flowable 打造你们自己的工作流平台，是一条“站在巨人肩膀上”的渐进式路线。下面我把整个过程拆成 5 个阶段，每个阶段给出目标、关键技术点、可直接落地的步骤与工具，以及容易踩的坑。你可以按这个路线边调研、边打样、边上线，适合 1~3 人小团队起步，也适合后续横向扩展成专职中台。</p>
+<hr/>
+<p>阶段 1　技术预研（1 周）
+目标：验证 Flowable 能不能跑通你们最复杂的 1~2 条业务线，并输出《技术可行性报告》。</p>
+<ol>
+<li>
+<p>跑通最小闭环<br/>
+a. 官方 docker-compose 把 flowable-rest + flowable-ui 启起来。<br/>
+b. 用 Flowable-Modeler 画一条“会签+驳回+转办”流程 → 导出 bar → 调 REST 部署 → 调 REST 启动实例 → 完成审批。<br/>
+c. 用 Postman 集合把以上 6 个 REST 接口固化下来，作为后续性能基准脚本。</p>
+</li>
+<li>
+<p>性能与扩展性摸底<br/>
+a. 把上面 Postman 脚本用 JMeter 压 10 min，50 并发，看 CPU/DB 连接/乐观锁异常。<br/>
+b. 记录“流程实例数 ≈ 50 万”时历史表（ACT_HI_*）占用的磁盘，评估后续分库分表方案。</p>
+</li>
+<li>
+<p>关键源码走读<br/>
+a. 只读三类源码：CommandExecutorImpl、Bp mnDeployer、TaskEntityManagerImpl，目的是知道“事务边界”和“插件入口”。<br/>
+b. 用 IDEA 的 “Diagram → Show Dependency” 把 flowable-spring-boot-starter 的自动配置画成一张图，后续自己封装 starter 会抄它。</p>
+</li>
+</ol>
+<p>输出物：</p>
+<ul>
+<li>1 份《Flowable 性能基准报告》（含 TPS、RT、DB 规格）。</li>
+<li>1 张《核心类图 + 事务边界图》。</li>
+<li>1 份《风险清单》，至少包括：乐观锁重试、历史表膨胀、REST 无租户隔离。</li>
+</ul>
+<hr/>
+<p>阶段 2　总体架构设计（3 天）
+目标：决定“嵌入式”还是“独立引擎”，以及“流程服务”与“业务服务”怎么拆。</p>
+<ol>
+<li>
+<p>部署模式选型</p>
+<ul>
+<li>推荐“独立引擎 + 多租户”模式：<br/>
+– 引擎单独一个 SpringBoot 应用（flowable-engine-svc），只暴露 REST/GraphQL。<br/>
+– 你们的订单、报销、采购等 3 个业务服务通过 OpenFeign 调引擎，做到业务库零耦合。</li>
+<li>优点：升级引擎不重启业务；DB 独立，方便后续做“历史库”归档。</li>
+</ul>
+</li>
+<li>
+<p>技术栈锁定<br/>
+引擎侧：SpringBoot 2.7 + Flowable 6.8 + MySQL 8.0（row_format=dynamic）+ Redis（idGenerator 用 RedisSequenceGenerator）。<br/>
+业务侧：任意语言，只要调 REST 即可。<br/>
+流程设计器：直接内嵌 Flowable-Modeler 的 Angular 包，前端用 iframe 嵌进来，减少 60% 自研工作量。</p>
+</li>
+<li>
+<p>租户模型<br/>
+采用 Flowable 自带的 TENANT_ID_ 字段，所有表天然支持。<br/>
+在业务服务调用引擎时统一在 header 带 X-Tenant-Id，网关层写 1 个 TenantContextFilter 把租户塞进 Flowable 的 CommandContext。</p>
+</li>
+<li>
+<p>表扩展策略<br/>
+不改动 Flowable 原表，只建 1 张 ext_proc_variable 存业务 JSON，主键与 ACT_RU_EXECUTION 一对一，后续升级引擎零冲突。</p>
+</li>
+</ol>
+<hr/>
+<p>阶段 3　核心功能二次开发（4~6 周）
+目标：把“流程图设计 → 节点配置 → 提交/审批/驳回/转办/会签/自动签”全链路做成可配置，提供 1 套内部 npm 组件 + REST SDK。</p>
+<ol>
+<li>
+<p>流程图设计器</p>
+<ul>
+<li>把 flowable-modeler 的 war 解压，把 stencilset_bpmn.json 汉化，把 “UserTask” 新增 3 个自定义属性：<br/>
+candidateType（固定/角色/表单变量/自定义SQL）、autoComplete（true=自动签）、multiInstance（串行/并行/或签）。</li>
+<li>用 Vue3 包装成 bpmn-designer 组件，发布到私有 npm，1 行代码就能嵌入任意前端页面。</li>
+</ul>
+</li>
+<li>
+<p>节点配置</p>
+<ul>
+<li>写 1 个 Entity：ProcNodeExtend，字段就是上面 3 个自定义属性 + 通知模板 + 表单权限 JSON。</li>
+<li>监听 ENTITY_CREATED 事件，把 Modeler 里导出的 BPMN 解析，把自定义属性落库。</li>
+</ul>
+</li>
+<li>
+<p>提交 &amp; 审批</p>
+<ul>
+<li>业务服务只调 1 个通用接口：POST /runtime/process-instances，传 tenantId、businessKey、startFormData。</li>
+<li>引擎侧写 1 个 GlobalStartProcessCmd，自动做：<br/>
+a) 把 businessKey 回写到业务表；<br/>
+b) 根据 startFormData 计算第一个节点的审批人；<br/>
+c) 发 RocketMQ 消息，业务侧监听后推待办/邮件/企微。</li>
+</ul>
+</li>
+<li>
+<p>驳回 &amp; 转办</p>
+<ul>
+<li>驳回：利用 Flowable 的 BoundaryEvent + rollback 命令，封装成 POST /task/{id}/reject?targetActivityId=xxx。</li>
+<li>转办：直接调 taskService.setAssignee，同时写 1 条转办记录到 ext_task_delegate 表，前端可查看“我转出的”和“我收到的”。</li>
+</ul>
+</li>
+<li>
+<p>会签</p>
+<ul>
+<li>串行：multiInstance=sequential，collection 用 ${sequentialAssigneeList}。</li>
+<li>并行：multiInstance=parallel，collection 用 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.0197em;">l</span><span class="mord mathnormal">A</span><span class="mord mathnormal">ss</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.0359em;">g</span><span class="mord mathnormal">n</span><span class="mord mathnormal">ee</span><span class="mord mathnormal">L</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span></span><span class="mord cjk_fallback">，</span><span class="mord mathnormal">co</span><span class="mord mathnormal">m</span><span class="mord mathnormal" style="margin-right:0.0197em;">pl</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.0715em;">C</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord cjk_fallback">用</span></span></span></span>{nrOfCompleted/nrOfInstances >= 1}。</li>
+<li>或签：同上，completionCondition 用 ${nrOfCompleted > 0}。<br/>
+以上 3 种模式在 Modeler 里做成下拉框，节点保存时自动生成 XML，零手写。</li>
+</ul>
+</li>
+<li>
+<p>自动签</p>
+<ul>
+<li>在 TaskCreatedEvent 里判断 autoComplete=true，则直接调用 taskService.complete(taskId, autoApproveMap)。</li>
+<li>为防止死循环，加 1 个 ThreadLocal 深度计数器 >3 就抛异常。</li>
+</ul>
+</li>
+<li>
+<p>统一 SDK</p>
+<ul>
+<li>给业务侧提供 flowable-client-spring-boot-starter，内置：<br/>
+– FeignClient + 熔断；<br/>
+– TenantContext 自动传递；<br/>
+– @EnableFlowableClient 1 个注解即可注入 ProcessInstanceService、TaskService。</li>
+<li>这样各业务线开发感知不到 Flowable，像调本地 Service 一样。</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<p>阶段 4　监控与运维（并行进行，1 周）
+目标：让运维愿意接，能报警，能回滚。</p>
+<ol>
+<li>
+<p>历史数据归档<br/>
+用 MySQL 的 partition（按 proc_inst_id_ 哈希 64 分区）+ 每月交换分区到历史库，查询用 Hive/ClickHouse。</p>
+</li>
+<li>
+<p>慢 SQL 治理<br/>
+把 flowable 自带的 3 条全表扫描 SQL（ACT_HI_ACTINST 按 proc_inst_id_ 查）改写成索引覆盖，建联合索引 (PROC_INST_ID_, ACT_ID_)。</p>
+</li>
+<li>
+<p>引擎升级策略</p>
+<ul>
+<li>所有表结构变更用 Flowable 自带的 liquibase changelog，不手写；</li>
+<li>升级流程：shadow 库 diff → 双跑 24h → 流量 1% 灰度 → 100%。</li>
+</ul>
+</li>
+<li>
+<p>监控看板<br/>
+Grafana 模板已开源（ID 16367），直接导入即可看“流程实例 TPS”、“待办 Top10 用户”、“Job 死信队列”。</p>
+</li>
+</ol>
+<hr/>
+<p>阶段 5　落地路线与迭代计划
+第 0 个月：完成阶段 1 预研 + 阶段 2 架构评审。<br/>
+第 1~2 个月：阶段 3 核心功能，先接 1 条最简单的“采购申请”流程上线（灰度 10%）。<br/>
+第 3 个月：接入第 2 条“合同审批”流程，把会签、或签、自动签全部跑通。<br/>
+第 4 个月：抽象成“流程中台”，提供 SaaS 化控制台（租户自助创建流程、配置表单）。<br/>
+第 5 个月以后：做“低代码表单设计器”、“流程预测”、“AI 智能驳回”等增值功能。</p>
+<hr/>
+<p>常见坑汇总</p>
+<ol>
+<li>乐观锁异常：并发高时 ACT_RU_TASK 更新会冲突，调大 retry 次数 + 业务幂等。</li>
+<li>历史表膨胀：一定要做分区或归档，否则 6 个月后单表破 5000W 行直接拖垮全库。</li>
+<li>租户隔离漏传：网关层一定要统一塞 TENANT_ID_，不然 A 租户能查到 B 租户流程。</li>
+<li>自动签死循环：一定加深度计数器，曾有同事把会签节点也勾了 autoComplete，直接栈溢出。</li>
+<li>升级踩坑：6.7→6.8 时 Flowable 把 ACT_ID_ 长度从 64→255，如果 DBA 按 64 建索引就全表锁，升级前务必 diff 表结构。</li>
+</ol>
+<hr/>
+<h1 id="安装-docker">安装 Docker<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#安装-docker" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>git clone <a href="https://gitee.com/flowable/flowable-docker.git" class="external external-link">https://gitee.com/flowable/flowable-docker.git<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+cd flowable-docker
+docker-compose -f flowable-rest.yml up -d</p>
+<h1 id="浏览器打开-httplocalhost8080flowable-ui">浏览器打开 <a href="http://localhost:8080/flowable-ui" class="external external-link">http://localhost:8080/flowable-ui<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#浏览器打开-httplocalhost8080flowable-ui" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h1 id="账号-admintest">账号 admin/test<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#账号-admintest" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h1 id="画流程导出-bar">画流程→导出 bar→<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#画流程导出-bar" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>curl -X POST -u rest-admin:test <br/>
+-F file=@leave.bpmn20.xml <br/>
+<a href="http://localhost:8080/flowable-rest/service/repository/deployments" class="external external-link">http://localhost:8080/flowable-rest/service/repository/deployments<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h1 id="调-1-个接口就发起流程立刻能看到待办">调 1 个接口就发起流程，立刻能看到待办。<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#调-1-个接口就发起流程立刻能看到待办" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<hr/>
+<p>结语
+把上面 5 个阶段按节奏推进，你们就能在 3 个月内拿到一套“可灰度、可扩展、运维愿意接”的工作流中台。后续想加低代码、想加 AI 审批，都只需要在现有骨架上长出新模块，而不会动到核心引擎。祝你开发顺利，有问题随时再喊我。</p></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.8,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.8,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-1" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#安装-docker" data-for="安装-docker">安装 Docker</a></li><li class="depth-0"><a href="#浏览器打开-httplocalhost8080flowable-ui" data-for="浏览器打开-httplocalhost8080flowable-ui">浏览器打开 http://localhost:8080/flowable-ui</a></li><li class="depth-0"><a href="#账号-admintest" data-for="账号-admintest">账号 admin/test</a></li><li class="depth-0"><a href="#画流程导出-bar" data-for="画流程导出-bar">画流程→导出 bar→</a></li><li class="depth-0"><a href="#调-1-个接口就发起流程立刻能看到待办" data-for="调-1-个接口就发起流程立刻能看到待办">调 1 个接口就发起流程，立刻能看到待办。</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com">GitHub</a></li></ul></footer></div></div></body><script src="../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript-3263510b.js" type="module" data-persist="true"></script></html>
