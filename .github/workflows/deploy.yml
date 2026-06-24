@@ -19,17 +19,15 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4.1.0
         with:
-          node-version: 22
+          node-version: 24
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Build og-image plugin
-        run: |
-          cd .quartz/plugins/og-image
-          npm ci
-          npm run build
-          cd ../../../
+      # ------- 以下步骤已被删除 -------
+      # 原 "Build og-image plugin" 步骤已移除
+      # 因为其 package.json 中缺少 "build" 脚本
+      # ------- 删除结束 ----------------
 
       - name: Build Quartz
         run: npx quartz build
