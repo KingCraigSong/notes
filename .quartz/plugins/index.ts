@@ -1,2 +1,2 @@
-// Re-export CustomOgImagesEmitterName for Head component
-export { CustomOgImagesEmitterName } from "./og-image/dist/index.js";
+// This file intentionally left empty
+// Quartz core files expect an index.ts here, but we don't need custom exports

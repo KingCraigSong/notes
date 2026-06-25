@@ -1,8 +1,11 @@
 # Dependencies
 node_modules/
+.quartz/plugins/*/node_modules/
 
 # Build output
 public/
+.quartz/plugins/*/dist/
+.quartz/plugins/*/.cache/
 
 
 # Environment
