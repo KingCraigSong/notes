@@ -106,16 +106,14 @@ plugins:
         depth: 1,
         focusOnHover: true
         fontSize: 0.8
-        opacityScale: 4,
-        scale: 1.1
+        opacityScale: 6
       globalGraph:
         drag: true,
         zoom: true,
         depth: -1,
         focusOnHover: true
         fontSize: 0.8
-        opacityScale: 4,
-        scale: 1.1
+        opacityScale: 6
     layout:
       position: right
       priority: 10
