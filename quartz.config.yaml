@@ -109,8 +109,8 @@ plugins:
         centerForce: 0.3
         linkDistance: 30
         fontSize: 0.6
-        opacityScale: 5
-        removeTags: []
+        opacityScale: 1
+        removeTags: ["#"]
         showTags: true
         focusOnHover: false
         enableRadial: false
@@ -123,8 +123,8 @@ plugins:
         centerForce: 0.3
         linkDistance: 30
         fontSize: 0.6
-        opacityScale: 5
-        removeTags: []
+        opacityScale: 1
+        removeTags: ["#"]
         showTags: true
         focusOnHover: true
         enableRadial: true
