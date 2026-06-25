@@ -24,12 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build og-image plugin
-        run: |
-          cd .quartz/plugins/og-image
-          npm ci
-          npm run build
-          cd ../../../
+      - name: Install community plugins
+        run: npm run install-plugins
 
       - name: Build Quartz
         run: npx quartz build

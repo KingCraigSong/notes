@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1dabd309a4395b46",
+        "id": "ff4b39cbbac88261",
         "type": "tabs",
         "children": [
           {
-            "id": "cb948f2d02d70e95",
+            "id": "412e537318797d1d",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -179,8 +179,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "cb948f2d02d70e95",
+  "active": "412e537318797d1d",
   "lastOpenFiles": [
+    "index.md",
     "读书笔记/00_计算机书单.md",
     "工程实践/软考备战/备考策略与计划.md",
     "工程实践/软考备战/前期准备方案.md",
@@ -192,7 +193,6 @@
     "模版代码/运维配置/Linux 命令集合.md",
     "模版代码/运维配置/K8s命令集.md",
     "智能助手",
-    "index.md",
     "读书笔记/技术书籍/算法学习原型.pdf",
     "临时/工作流/01_调研学习.md",
     "临时/工作流/00_通用需求（AI）.md",

@@ -1,11 +1,11 @@
 # Dependencies
 node_modules/
-.quartz/plugins/*/node_modules/
 
 # Build output
 public/
-.quartz/plugins/*/dist/
-.quartz/plugins/*/.cache/
+
+# Community plugins (installed via npm run install-plugins)
+.quartz/plugins/
 
 
 # Environment
