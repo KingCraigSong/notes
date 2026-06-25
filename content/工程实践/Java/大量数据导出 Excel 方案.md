@@ -1,5 +1,5 @@
 ---
-title: SpringBoot 大量数据导出 Excel 方案设计
+title: 大量数据导出 Excel 方案
 tags:
   - Java
   - SpringBoot
