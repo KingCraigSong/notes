@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: none
   locale: zh-CN
-  baseUrl: "localhost"
+  baseUrl: "kingcraigsong.github.io/notes"
   ignorePatterns:
     - private
     - templates
