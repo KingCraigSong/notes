@@ -1,10 +1,10 @@
 ---
 title: Excel 自动化
 tags:
+  - AIGC
   - Excel
   - 办公自动化
   - 敏感数据
-  - Python
 ---
 
 # Excel 自动化
