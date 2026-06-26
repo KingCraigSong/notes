@@ -1,5 +1,5 @@
 ---
-title: WorkBudy 介绍
+title: 02_WorkBudy
 tags:
   - AIGC
   - WorkBudy
